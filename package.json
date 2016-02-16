@@ -1,0 +1,23 @@
+{
+  "name": "gulp-vueify",
+  "version": "0.0.1",
+  "description": "Compile .vue files using vueify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulpplugin",
+    "vueify",
+    "vue",
+    "vuejs"
+  ],
+  "author": "Zahajki",
+  "repository": "Zahajki/gulp-vueify",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1",
+    "vueify": "^8.3.5"
+  }
+}
