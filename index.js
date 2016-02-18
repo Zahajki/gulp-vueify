@@ -25,7 +25,7 @@ function gulpVueify (options) {
     compiler.compile(file.contents.toString(), file.path, function (err, result) {
       if (err) {
         this.emit('error', new PluginError(PLUGIN_NAME, err.message));
-        return;
+        return callback();
       }
       file.path = gutil.replaceExtension(file.path, '.js');
       file.contents = new Buffer(result);
