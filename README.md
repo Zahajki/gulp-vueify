@@ -9,7 +9,7 @@ npm install Zahajki/gulp-vueify --save-dev
 
 Typically you will also have to do:
 ```bash
-npm install babel-core babel-plugin-transform-runtime babel-preset-es2015 --save-dev
+npm install vueify-insert-css babel-core babel-plugin-transform-runtime babel-preset-es2015 --save-dev
 ```
 
 ## Usage
@@ -24,6 +24,6 @@ gulp.task('vueify', function () {
 ```
 
 ## API
-### vueify(config)
+### vueify([config])
 #### config
-[Config](https://github.com/vuejs/vueify#configuring-options) for vueify. Optional.
+Config for vueify. See [vueify document](https://github.com/vuejs/vueify#configuring-options).
