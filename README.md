@@ -4,7 +4,7 @@ This is useful for [Electron](http://electron.atom.io/) apps.
 
 ## Installation
 ```bash
-npm install Zahajki/gulp-vueify --save-dev
+npm install gulp-vueify --save-dev
 ```
 
 Typically you will also have to do:
