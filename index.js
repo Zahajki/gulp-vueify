@@ -3,6 +3,7 @@
 var through = require('through2');
 var gutil = require('gulp-util');
 var compiler = require('vueify').compiler;
+var path = require('path');
 
 var PluginError = gutil.PluginError;
 
@@ -24,7 +25,8 @@ function gulpVueify (options) {
     }
     compiler.compile(file.contents.toString(), file.path, function (err, result) {
       if (err) {
-        this.emit('error', new PluginError(PLUGIN_NAME, err.message));
+        this.emit('error', new PluginError(PLUGIN_NAME,
+          'In file ' + path.relative(process.cwd(), file.path) + ':\n' + err.message));
         return callback();
       }
       file.path = gutil.replaceExtension(file.path, '.js');
