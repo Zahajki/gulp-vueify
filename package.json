@@ -1,6 +1,6 @@
 {
   "name": "gulp-vueify",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Compile .vue files using vueify",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,6 @@
   "dependencies": {
     "gulp-util": "^3.0.7",
     "through2": "^2.0.1",
-    "vueify": "^8.3.5"
+    "vueify": "^9.4.0"
   }
 }
